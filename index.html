@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        /* reset page default margin and padding*/
+        *{margin: 0; padding: 0;}
+
+        /* Table one style*/
+       .table-one th, .table-one td{
+            border: 1px solid #3a3838;
+            padding:8px; text-align: center;
+        }
+
+        .table-one tr:nth-child(odd){
+            background-color:#dedede;
+        }
+        .table-one{border-collapse: collapse; width: 70%;}
+       .table-one th{background-color:rgb(39, 97, 68); color: #fff;}
+
+        
+       /* Table two styles */
+       .table-two{
+           border-collapse: collapse; width:70%;
+       }
+
+       .th-td{
+           border: 1px solid #e07d7d;
+           padding: 8px;
+       }
+
+       .tr-effect:hover{background-color: #e07d7d; cursor: pointer; color:#fff}
+
+
+       /* Navbar styles*/
+    
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+         
+        }
+
+        li{display: inline;}
+
+        li a{
+           display: inline-block; padding: 10px 20px; text-align: center; text-decoration: none; color: #fff;
+            
+        }
+
+        li a:hover{background-color: red;}
+
+        .active{background-color: red;}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#a">About Us</a></li>
+            <li><a href="#c">Contact Us</a></li>
+            <li><a href="#n">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!--Table one-->
+    <center>
+    <h2 style="margin: 20px;">HTML Table</h2>
+    <table class="table-one">
+        <tr>
+            <th style="width: 10%;">No.</th>
+            <th style="width: 35%;">Name</th>
+            <th style="width: 35%;">Company</th>
+            <th style="width: 20%;">Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Microsoft</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Apple</td>
+            <td>$1200</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Google</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zuckerberg</td>
+            <td>Facebook</td>
+            <td>$1300</td>
+        </tr>
+    </table>
+    </center>
+
+    <!-- Table two-->
+    <center>
+        <h2 style="margin: 20px;">HTML Table</h2>
+        <table class="table-two">
+            <tr class="tr-effect">
+                <th class="th-td" style="width: 30%;" colspan="2">Full Name</th>
+                <th class="th-td" style="width: 35%;">Company</th>
+                <th class="th-td" style="width: 20%;">Salary</th>
+            </tr>
+            <tr class="tr-effect">
+                <td class="th-td">1</td>
+                <td class="th-td">Bill Gates</td>
+                <td class="th-td">Microsoft</td>
+                <td class="th-td">$1000</td>
+            </tr>
+            <tr class="tr-effect">
+                <td class="th-td">2</td>
+                <td class="th-td">Steve Jobs</td>
+                <td class="th-td">Apple</td>
+                <td class="th-td">$1200</td>
+                
+            </tr>
+            <tr class="tr-effect">
+                <td class="th-td">3</td>
+                <td class="th-td">Larry Page</td>
+                <td class="th-td">Google</td>
+                <td class="th-td">$1100</td>
+            </tr>
+            <tr class="tr-effect">
+                <td class="th-td">4</td>
+                <td class="th-td">Mark Zuckerberg</td>
+                <td class="th-td">Facebook</td>
+                <td class="th-td">$1300</td>
+            </tr>
+        </table>
+        </center>
+</body>
+</html>
