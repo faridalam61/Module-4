@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="#">Pages</a>
+                <div class="dropdown-content">
+                    <a href="form.html">HTML Form</a>
+                    <a href="index.html">HTML Table</a>
+                    
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+<main style="padding:20px">
+    <h2>Form</h2>
+    <form>
+        <label for="name">
+            <input type="text" name="" id="name" placeholder="Enter your name">
+        </label>
+        <label for="email">
+            <input type="email" name="" id="email" placeholder="Enter your name">
+        </label>
+        <fieldset style="padding: 15px; width:80%;">
+            <legend>Select one option</legend>
+           <label for="optio-one">
+                <input type="radio" name="option" id="onption-one"> Option one
+            </label>
+
+            <label for="optio-one">
+                <input type="radio" name="option" id="onption-one"> Option Two
+            </label>
+
+            <label for="optio-one">
+                <input type="radio" name="option" id="onption-one"> Option Three
+            </label>
+        </fieldset>
+
+        <fieldset style="padding: 15px; width:80%;">
+            <legend>Select one option</legend>
+           <label for="optio-one">
+                <input type="checkbox" name="option" id="onption-onee"> Option one
+            </label>
+
+            <label for="optio-one">
+                <input type="checkbox" name="option" id="onption-onet"> Option Two
+            </label>
+
+            <label for="optio-one">
+                <input type="checkbox" name="option" id="onption-onett"> Option Three
+            </label>
+        </fieldset>
+        <label for="textar">
+        <textarea name="" id="textar" cols="30" rows="10" placeholder="Message"></textarea>
+        </label>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</main>
+</body>
+</html>

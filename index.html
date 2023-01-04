@@ -5,67 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table</title>
-    <style>
-        /* reset page default margin and padding*/
-        *{margin: 0; padding: 0;}
-
-        /* Table one style*/
-       .table-one th, .table-one td{
-            border: 1px solid #3a3838;
-            padding:8px; text-align: center;
-        }
-
-        .table-one tr:nth-child(odd){
-            background-color:#dedede;
-        }
-        .table-one{border-collapse: collapse; width: 70%;}
-       .table-one th{background-color:rgb(39, 97, 68); color: #fff;}
-
-        
-       /* Table two styles */
-       .table-two{
-           border-collapse: collapse; width:70%;
-       }
-
-       .th-td{
-           border: 1px solid #e07d7d;
-           padding: 8px;
-       }
-
-       .tr-effect:hover{background-color: #e07d7d; cursor: pointer; color:#fff}
-
-
-       /* Navbar styles*/
-    
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-         
-        }
-
-        li{display: inline;}
-
-        li a{
-           display: inline-block; padding: 10px 20px; text-align: center; text-decoration: none; color: #fff;
-            
-        }
-
-        li a:hover{background-color: red;}
-
-        .active{background-color: red;}
-
-
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#a">About Us</a></li>
-            <li><a href="#c">Contact Us</a></li>
-            <li><a href="#n">Blog</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="#">Pages</a>
+                <div class="dropdown-content">
+                    <a href="form.html">HTML Form</a>
+                    <a href="index.html">HTML Table</a>
+                    
+                </div>
+            </li>
+            
         </ul>
     </nav>
 

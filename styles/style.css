@@ -1,0 +1,72 @@
+ /* reset page default margin and padding*/
+ *{margin: 0; padding: 0;}
+
+ /* Table one style*/
+.table-one th, .table-one td{
+     border: 1px solid #3a3838;
+     padding:8px; text-align: center;
+ }
+
+ .table-one tr:nth-child(odd){
+     background-color:#dedede;
+ }
+ .table-one{border-collapse: collapse; width: 80%;}
+.table-one th{background-color:rgb(39, 97, 68); color: #fff;}
+
+ 
+/* Table two styles */
+.table-two{
+    border-collapse: collapse; width:80%;
+}
+
+.th-td{
+    border: 1px solid #e07d7d;
+    padding: 8px;
+}
+
+.tr-effect:hover{background-color: #e07d7d; cursor: pointer; color:#fff}
+
+
+/* Navbar styles*/
+
+ ul{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     background-color: #333;
+  
+ }
+
+ li{display: inline;}
+
+ li a{
+    display: inline-block; padding: 10px 20px; text-align: center; text-decoration: none; color: #fff;
+     
+ }
+ li a:active{background-color: red;}
+
+ li a:hover{background-color: red;}
+
+ .active{background-color: red;}
+/*Dropdown style*/
+.dropdown-content{display: none; min-widht:200px; position: absolute; background-color: #424141;}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown-content a{display: block;}
+li.dropdown{display: inline-block;}
+
+/*other*/
+label{display: block; margin:10px 0}
+input[type=text], input[type=email]{
+    padding: 10px; border:1px solid #dedede;
+}
+
+input[type=submit], input[type=reset]{
+    background-color:#333; color:#fff; padding:10px; border:0; cursor: pointer; margin:20px 20px 0 0;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color:red; color:#fff;
+}
+
+fieldset{border:1px solid #dedede; margin-bottom: 20px;}
+
+textarea{display: block; padding:15px}
