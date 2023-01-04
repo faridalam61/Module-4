@@ -57,7 +57,7 @@ li.dropdown{display: inline-block;}
 /*other*/
 label{display: block; margin:10px 0}
 input[type=text], input[type=email]{
-    padding: 10px; border:1px solid #dedede;
+    padding: 10px; border:1px solid #dedede; width: 100%;
 }
 
 input[type=submit], input[type=reset]{
@@ -67,6 +67,6 @@ input[type=submit]:hover, input[type=reset]:hover{
     background-color:red; color:#fff;
 }
 
-fieldset{border:1px solid #dedede; margin-bottom: 20px;}
+fieldset{border:1px solid #dedede; margin-bottom: 20px; width:100%}
 
-textarea{display: block; padding:15px}
+textarea{display: block; padding:15px; width:100%}
